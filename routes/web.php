@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\CalcController;
+use App\Http\Controllers\TheoryController;
+use App\Http\Controllers\QuizController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +17,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',[HomeController::class,'index'])->name('home.index');
+
+Route::get('/calc',[CalcController::class,'index'])->name('calc.index');
+
+Route::get('/quiz',[QuizController::class,'index'])->name('quiz.index');
+
+Route::get('/theory',[TheoryController::class,'index'])-> name('theory.index');
+
+Route::get('/about',[HomeController::class, 'about'])->name('home.about');
