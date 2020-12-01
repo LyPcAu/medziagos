@@ -1,0 +1,79 @@
+.header {
+    background: #c2002b;
+    z-index: 4;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .container,
+.sticky + .container-fluid {
+    padding-top: 100px;
+}
+
+.content {
+    margin: 10px 50px 50px 50px;
+}
+
+.border {
+    padding: 20px;
+    border: 2px solid black;
+    box-shadow: 0 0 5px gray;
+}
+
+.btn-custom {
+    background-color: #c2002b;
+    border: 1px solid #c2002b;
+    border-radius: 30%;
+    color: white;
+}
+
+.btn-custom:hover {
+    box-shadow: 0 0 10px black;
+}
+
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.img-border {
+    border: 5px solid #c2002b;
+    box-shadow: 0 0 5px black;
+}
+
+.img-description {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: #c2002b;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}

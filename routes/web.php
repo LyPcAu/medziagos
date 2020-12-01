@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\CalcController;
+use App\Http\Controllers\TheoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +16,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [HomeController::class, 'index']);
+Route::get('/komanda', [HomeController::class, 'about']);
+Route::get('/apie-darba', [HomeController::class, 'lab_work']);
+
+
+Route::get('/skaiciuokle', [CalcController::class, 'index']);
+Route::post('/process-graph', [CalcController::class, 'show']);
+
+Route::get('/teorija', [TheoryController::class, 'index']);
