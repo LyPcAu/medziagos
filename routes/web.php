@@ -17,11 +17,6 @@ use App\Http\Controllers\TheoryController;
 */
 
 Route::get('/', [HomeController::class, 'index']);
-Route::get('/komanda', [HomeController::class, 'about']);
-Route::get('/apie-darba', [HomeController::class, 'lab_work']);
 
-
-Route::get('/skaiciuokle', [CalcController::class, 'index']);
-Route::post('/process-graph', [CalcController::class, 'show']);
-
-Route::get('/teorija', [TheoryController::class, 'index']);
+Route::get('/graph', [CalcController::class, 'show']);
+Route::post('/process-graph', [CalcController::class, 'create']);
