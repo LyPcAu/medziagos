@@ -9,35 +9,41 @@ class CalcController extends Controller
 {
     public function index()
     {
-        return view ('calc');
+
+
+        return $this->load->view('calc');
     }
 
-	public function create()
+    public function create()
+    {
+
+       // return show()
+
+
+     // $result = DB::select"select * from ?", $materials[i]);
+    }
+
+    public function store()
     {
         //
     }
 
-	public function store()
+    public function show()
+    {
+        return view('graph');
+    }
+
+    public function edit()
     {
         //
     }
 
-	public function show()
+    public function update()
     {
         //
     }
 
-	public function edit()
-    {
-        //
-    }
-
-	public function update()
-    {
-        //
-    }
-
-	public function destroy()
+    public function destroy()
     {
         //
     }

@@ -4,15 +4,19 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\Material;
-use Illuminate\HTTP\Request;
 
 class HomeController extends Controller
 {
-    public function index ()
+    public function index()
     {
-        return view('welcome');
+        $data['name'] = ["Aliuminis","Anglis","Konstantas", "Varis", "Germanis","Auksas",
+        "Geležis", "Švinas", "Manganinas", "Gyvsidabris", "Nikromas", "Platina", "Silicis", "Sidabras", "Volframas"];
+       $data['material_data'] = ["aluminum","carbon","constantan","copper","germanium","gold"
+      ,"iron","lead","manganin", "mercury","nichrome", "platinum", "silicon","silver","tungsten"];
+        return view('main',$data);
     }
-    public function about ()
+
+    public function about()
     {
         return view('about');
     }
