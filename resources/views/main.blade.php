@@ -183,7 +183,7 @@
                                             </div>
                                         </div>
                                         <div class="d-flex justify-content-center">
-                                            <button type="submit" name="create" class="btn btn-custom">SUDARYTI
+                                            <button type="submit" name="create" class="btn btn-custom" method= "post">SUDARYTI
                                                 GRAFIKĄ</button>
                                         </div>
                                     </div>

@@ -11,7 +11,7 @@ class CalcController extends Controller
     {
 
 
-        return $this->load->view('calc');
+        return $this-('calc');
     }
 
     public function create()
