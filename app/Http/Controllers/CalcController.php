@@ -9,9 +9,9 @@ use Illuminate\Support\Facades\DB;
 
 class CalcController extends Controller
 {
-    public function index(Request $request)
+    public function index()
     {
-
+        //
     }
 
     public function create()
