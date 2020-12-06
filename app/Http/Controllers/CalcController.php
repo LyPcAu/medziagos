@@ -25,7 +25,7 @@ class CalcController extends Controller
         {
             $data['temp']++;
         }
-        $coff = 0.00015;//DB::table($material)->where('temp',$data['temp'])->value('resistivity');
+        $coff = DB::table($material)->where('temp',$data['temp'])->value('resistivity');
         $data['calc'] = ($coff*$length)/$wire_area;
         $data['calc_in_meter'] = $data['calc']/$length;
 
