@@ -18,7 +18,7 @@ class HomeController extends Controller
       ,'iron','lead','manganin', 'mercury','nichrome', 'platinum', 'silicon','silver','tungsten'];
         for ($i =0; $i<count($data['material_data']);$i++)
         {
-            //$data['coff'][$i] = DB::table($data['material_data'][$i])->where('temp','20')->value('resistivity');
+            $data['coff'][$i] = DB::table($data['material_data'][$i])->where('temp','20')->value('resistivity');
         }
         return view('main',$data);//-> with('data', json_encode($data, JSON_NUMERIC_CHECK));
     }
