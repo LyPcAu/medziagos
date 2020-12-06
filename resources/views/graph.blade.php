@@ -1,10 +1,11 @@
 <div id="results">
-    <span>Rezultatai <strong>{{ $input_temp ?? 'N/A' }}</strong> °C
+    <span>Rezultatai <strong>{{ $temp ?? 'N/A' }}</strong> °C
         temperatūroje:</span><br>
-    <span>Rezistencija: <strong>{{ $result_resistivity ?? 'N/A' }}</strong> Ω
+    <span>Varža: <strong>{{ $calc ?? 'N/A' }}</strong> Ω
         mm<sup>2</sup> /
         m</span><br>
-    <span>Rezistencija metre: <strong>{{ $result_resistance ?? 'N/A' }}</strong>
+    <span>Varža metre: <strong>{{ $calc_in_meter ?? 'N/A' }}</strong>
         Ω /
         m</span>
 </div>
+<img src = "{{ asset('graphs/aluminum.jpg')}}">

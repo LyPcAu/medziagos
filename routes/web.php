@@ -18,5 +18,5 @@ use App\Http\Controllers\TheoryController;
 
 Route::get('/', [HomeController::class, 'index']);
 
-Route::get('/graph', [CalcController::class, 'show']);
+Route::get('/graph', [CalcController::class, 'show'])->name('graph.display');
 Route::post('/process-graph', [CalcController::class, 'create']);
