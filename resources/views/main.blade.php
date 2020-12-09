@@ -311,7 +311,7 @@
                         </div>
                         <div class="row">
                             <div class="col container">
-                                <img src="{{ asset('img/mindaugas.jpg') }}" class="rounded-circle img img-border"
+                                <img src="{{ asset('img/minvin.jpg') }}" class="rounded-circle img img-border"
                                     alt="Mindaugas Vinciūnas" width="175" height="175">
                                 <div class="overlay">
                                     <h5 class="img-description">Mindaugas Vinciūnas</h5>
