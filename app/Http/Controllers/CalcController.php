@@ -16,16 +16,18 @@ class CalcController extends Controller
 
     public function create()
     {
-        $wire_area=request('input_wire_area');
+        (float)$wire_area=floatval(request('input_wire_area'));
+		if($wire_area==0)
+		{$wire_area=0.1;}
         $material=request('material');
-        $length = request('input_length');
-        (float)$temp=request('input_temp');
+        (float)$length = floatval(request('input_length'));
+        (float)$temp=floatval(request('input_temp'));
         $data['temp']=round($temp);
         if($data['temp']%2!=0)
         {
             $data['temp']++;
         }
-        $coff = DB::table($material)->where('temp',$data['temp'])->value('resistivity');
+        (float)$coff = floatval(DB::table($material)->where('temp',$data['temp'])->value('resistivity'));
         $data['calc'] = ($coff*$length)/$wire_area;
         $data['calc_in_meter'] = $data['calc']/$length;
 
