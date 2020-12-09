@@ -153,6 +153,10 @@
                                                      (°C<sup>-1</sup>):</label>
                                                 <input class="form-control-range" id="temp_coef" name="temp_coef" type="text"
                                                     disabled value="{{ $temperature_coef ?? '' }}">
+                                                <label class="form-label" for="input_length">Įveskite Laido
+                                                    ilgį
+                                                     (m):</label>
+                                                <input class="form-control-range" id="input_length" name="input_length" type="text">
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -160,7 +164,7 @@
                                                 koeficientas<br> 20°C
                                                 temperatūroje (Ω mm<sup>2</sup> / m):</label>
                                             <input class="form-control-range" id="resist_at" name="resist_at" type="text"
-                                                disabled value="{{ $resistivity_coef ?? '' }}">
+                                                disabled value="{{ $resit_coef ?? '' }}">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
@@ -169,7 +173,7 @@
                                                 <label class="form-label" for="input_wire_area">Įveskite laido
                                                     skerspjūvio
                                                     plotą
-                                                    (mm<sup>2</sup>):</label>
+                                                    (m<sup>2</sup>):</label>
                                                 <input class="form-control-range" id="input_wire_area" name="input_wire_area"
                                                     type="text">
                                             </div>
@@ -250,7 +254,7 @@
                                 </div>
                             </div>
                             <div class="col container">
-                                <img src="{{ asset('img/placeholder.jpg') }}" class="rounded-circle img img-border"
+                                <img src="{{ asset('img/minliu1.jpg') }}" class="rounded-circle img img-border"
                                     alt="Mindaugas Liutkauskas" width="175" height="175">
                                 <div class="overlay">
                                     <h5 class="img-description">Mindaugas Liutkauskas</h5>
