@@ -105,7 +105,7 @@
                                                 <label for="material" class="form-label">Pasirinkite
                                                     medžiagą:&nbsp;</label>
                                                 <select name="material" id="material" class="form-control-range">
-                                                    <?php for ($i = 0; $i < count($material_data); $i++):?> 
+                                                    <?php for ($i = 0; $i < count($material_data); $i++):?>
                                                         <option value="{{ $material_data[$i] }}"> <?php echo $name[$i]; ?></option>
                                                     <?php endfor; ?>
                                                 </select>
@@ -116,7 +116,7 @@
                                                 <label class="form-label" for="input_length">Įveskite Laido
                                                     ilgį (m):</label>
                                                 <input class="form-control-range" id="input_length" name="input_length"
-                                                    type="number" step="0.01">
+                                                    type="number" step="0.0001">
 
                                             </div>
                                         </div>
@@ -129,7 +129,7 @@
                                                     plotą
                                                     (m<sup>2</sup>):</label>
                                                 <input class="form-control-range" id="input_wire_area"
-                                                    name="input_wire_area" type="number" step="0.01">
+                                                    name="input_wire_area" type="number" step="0.0001">
                                             </div>
                                         </div>
                                         <div class="pb-2">
@@ -137,7 +137,7 @@
                                                 <label class="form-label" for="input_temp">Įveskite temperatūrą
                                                     (°C):</label>
                                                 <input class="form-control-range" id="input_temp" name="input_temp"
-                                                    type="number" step="0.01">
+                                                    type="number" step="0.0001">
                                             </div>
                                         </div>
                                     </div>
@@ -158,7 +158,11 @@
             <div class="section-content">
                 <div class="row">
                     <div class="col-md-12 border">
-                        <h4>Temperatūra <strong>{{ $data_2['temp'] ?? 'N/A' }}</strong> °C;</h4>
+                        <h4>Medžiaga <strong>{{ $medziaga ?? 'N/A' }}</strong></h4>
+                        <h4>Savitoji varža pasirinktoje temperatūroje <strong>{{ $coff ?? 'N/A' }}</strong>Ω*m</h4>
+                        <h4>Plotas <strong>{{ $wire_area ?? 'N/A' }}</strong> m<sup>2</sup></h4>
+                        <h4>Ilgis <strong>{{ $length ?? 'N/A' }}</strong> m</h4>
+                        <h4>Temperatūra <strong>{{ $data_2['temp'] ?? 'N/A' }}</strong>°C</h4>
                     </div>
                 </div>
         </section>
@@ -169,9 +173,7 @@
             <div class="section-content">
                 <div class="row">
                     <div class="col-md-12 border">
-                        <h4>Varža: <strong>{{ $data_2['calc'] ?? 'N/A' }}</strong> Ω
-                            mm<sup>2</sup> /
-                            m;</h4>
+                        <h4>Varža: <strong>{{ $data_2['calc'] ?? 'N/A' }}</strong> Ω</h4>
                         <h4>Varža metre: <strong>{{ $data_2['calc_in_meter'] ?? 'N/A' }}</strong>
                             Ω /
                             m;</h4>
