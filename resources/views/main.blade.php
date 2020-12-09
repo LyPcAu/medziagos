@@ -111,6 +111,26 @@
     </div>
 
     <div class="page-content">
+        <section id="lab-work" class="content-section">
+            <div class="section-heading">
+                <h2><em>Labo</em>ratorinis darbas</h2>
+            </div>
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="{{ asset('img/pdf.png') }}" width="50px">
+                        <a href="{{ asset('img/ataskaita.pdf') }}" download><h3 class="text-center">Darbo ataskaita</h3></a>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="{{ asset('img/pdf.png') }}" width="50px">
+                        <a href="{{ asset('img/aprasymas.pdf') }}" download><h3 class="text-center">Darbo aprašymas</h3></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="page-content">
         <section id="theory" class="content-section">
             <div class="section-heading">
                 <h2><em>Teor</em>ija</h2>
@@ -119,7 +139,8 @@
                 <div class="row">
                     <div class="col-md-12 border">
                         <h2 class="text-left">Kas yra varža?</h2>
-                        <p class="text-justify content">Varža, kartais vadinama aktyvioji varža, tai medžiagos savybė priešintis
+                        <p class="text-justify content">Varža, kartais vadinama aktyvioji varža, tai medžiagos savybė
+                            priešintis
                             elektros srovei.
                             Ji egzistuoja todėl, kad laisvieji elektronai sąveikauja su laidininko atomais.
                             Kiekvieną kartą išvaduojant elektroną iš atomo įtakos, panaudojama šiek tiek energijos,
@@ -156,7 +177,8 @@
                             </div>
                         </div>
                         <h2 class="text-left">Kas yra savitoji varža?</h2>
-                        <p class="text-justify content">Savitoji varža tai laidininko priešinimasis elektros srovės tekėjimui.
+                        <p class="text-justify content">Savitoji varža tai laidininko priešinimasis elektros srovės
+                            tekėjimui.
                             Savitoji varža priklauso nuo medžiagos savybių, temperatūros.
                             Tai atvirkščias dydis elektriniam laidumui. Savitoji laidininko varža:
                         </p>
@@ -172,7 +194,8 @@
                             </div>
                         </div>
                         <h2 class="text-left">Kaip varža priklauso nuo kūno formos?</h2>
-                        <p class="text-justify content">Varža priklauso nuo kūno formos ir medžiagos iš kurios kūnas sudarytas.
+                        <p class="text-justify content">Varža priklauso nuo kūno formos ir medžiagos iš kurios kūnas
+                            sudarytas.
                             Cilindro formos rezistorius yra paprasčiausias kūnas paaiškinti varžai.
                             Panašiai kaip vandens vamzdžiui, cilindro ilgis ir skersmuo nusako kaip
                             stipriai kūnas priešinsis elektros srovei. Kuo ilgesnis kūnas tuo daugiau
@@ -183,7 +206,8 @@
                         </p>
                         <img src="{{ asset('img/cilinder.png') }}">
                         <h2 class="text-left">Kaip varža priklauso nuo temperatūros?</h2>
-                        <p class="text-justify content">Visų medžiagų varža priklauso nuo temperatūros, tam tikros medžiagos
+                        <p class="text-justify content">Visų medžiagų varža priklauso nuo temperatūros, tam tikros
+                            medžiagos
                             gali tapti super-laidininkais beveik neturinčiais varžos žemoje temperatūroje.
                             Paprastai laidininkų elektrinė varža kyla su temperatūra. Kadangi temperatūrai
                             kylant, kūno atomai vibruoja smarkiau, dėl ko per tam tikrą atstumą, aukštesnėse
@@ -198,7 +222,8 @@
                 </div>
                 <div class="row">
                     <div class="col-12 section-heading" style="margin-bottom: 0; padding-bottom: 0;">
-                        <h4 class="text-center">Perskaitei visą teoriją? Manai kažko išmokai? <a href="/quiz"><em>Išbandyk jėgas trumpame testuke!</em></a></h4>
+                        <h4 class="text-center">Perskaitei visą teoriją? Manai kažko išmokai? <a
+                                href="/quiz"><em>Išbandyk jėgas trumpame testuke!</em></a></h4>
                     </div>
                 </div>
             </div>
@@ -261,8 +286,8 @@
                                         </div>
                                     </div>
                                     <div class=" col-12 d-flex justify-content-center">
-                                        <button type="submit" name="create" class="btn btn-custom"
-                                            method="post">ATLIKTI SKAIČIAVIMUS</button>
+                                        <button type="submit" name="create" class="btn btn-custom" method="post">ATLIKTI
+                                            SKAIČIAVIMUS</button>
                                     </div>
                                 </div>
                             </form>
@@ -342,10 +367,10 @@
                                 <p class="text-justify content">
                                     IFB-7 grupės:
                                 </p>
-                                    <ul class="list-unstyled content text-left">
-                                        <li>Vilius Krupavičius</li>
-                                        <li>Mindaugas Liutkauskas</li>
-                                    </ul>
+                                <ul class="list-unstyled content text-left">
+                                    <li>Vilius Krupavičius</li>
+                                    <li>Mindaugas Liutkauskas</li>
+                                </ul>
                                 <p class="text-left content">IFC-7 grupės:</p>
                                 <ul class="list-unstyled content text-left">
                                     <li>Justinas Bagdonas</li>
