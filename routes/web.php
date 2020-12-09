@@ -20,3 +20,5 @@ Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/graph', [CalcController::class, 'show'])->name('graph.display');
 Route::post('/process-graph', [CalcController::class, 'create']);
+Route::get('/quiz',[TheoryController::class, 'show']);
+Route::post('postQuiz', [TheoryController::class, 'store']);
