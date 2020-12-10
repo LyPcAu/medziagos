@@ -264,7 +264,7 @@
                                                 <label class="form-label" for="input_length">Įveskite Laido
                                                     ilgį (m):</label>
                                                 <input class="form-control-range" id="input_length" name="input_length"
-                                                    type="number" step="0.01">
+                                                    type="number" min="0" step="0.01">
 
                                             </div>
                                         </div>
@@ -277,7 +277,7 @@
                                                     plotą
                                                     (m<sup>2</sup>):</label>
                                                 <input class="form-control-range" id="input_wire_area"
-                                                    name="input_wire_area" type="number" step="0.0001">
+                                                    name="input_wire_area" type="number" min="0" step="0.0001">
                                             </div>
                                         </div>
                                         <div class="pb-2">
@@ -285,7 +285,7 @@
                                                 <label class="form-label" for="input_temp">Įveskite temperatūrą
                                                     (°C):</label>
                                                 <input class="form-control-range" id="input_temp" name="input_temp"
-                                                    type="number" step="0.0001">
+                                                    type="number" min="0" step="0.0001">
                                             </div>
                                         </div>
                                     </div>
