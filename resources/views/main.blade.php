@@ -127,6 +127,10 @@
                     </div>
                 </div>
             </div>
+             <div>
+                <img src="{{ asset('img/irenginys.png') }}" width="900px">
+                <p>Laboratorinio darbo maketas</p>
+            </div>
         </section>
     </div>
 
