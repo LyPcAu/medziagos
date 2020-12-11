@@ -285,7 +285,7 @@
                                                 <label class="form-label" for="input_temp">Įveskite temperatūrą
                                                     (°C):</label>
                                                 <input class="form-control-range" id="input_temp" name="input_temp"
-                                                    type="number" min="0" step="0.0001">
+                                                    type="number" step="0.0001">
                                             </div>
                                         </div>
                                     </div>
